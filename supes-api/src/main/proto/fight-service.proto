@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "supes.proto";
+
+package me.escoffier.grpc.supes;
+
+service FightService {
+
+    rpc fight(Empty) returns (Fight) {}
+
+    rpc fightStream(Empty) returns (stream Fight) {}
+
+}
+
+message Fight {
+    Villain villain = 1;
+    Hero hero = 2;
+    string winner = 3;
+}

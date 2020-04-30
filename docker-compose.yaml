@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:4
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: quarkus
+      MONGO_INITDB_ROOT_PASSWORD: quarkus
+      MONGO_INITDB_DATABASE: supes
+    ports:
+      - 27017:27017
+    volumes:
+      - ./infrastructure/mongo-supes-init.js:/docker-entrypoint-initdb.d/mongo-supes-init.js:ro

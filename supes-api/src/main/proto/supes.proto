@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_outer_classname = "Supes";
+
+package me.escoffier.grpc.supes;
+
+message Hero {
+    string name = 1;
+    int32 level = 2;
+    string image = 3;
+}
+
+message Villain {
+    string name = 1;
+    int32 level = 2;
+    string image = 3;
+}
+
+message Empty {}
