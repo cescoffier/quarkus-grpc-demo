@@ -18,30 +18,8 @@ public class FightResource {
 
     @GET
     @Produces("application/json")
-    public Uni<Fight> triggerFight() {
-        return fightService.fight(Supes.Empty.newBuilder().build())
-                .map(Fight::new);
-    }
+    public Uni<FightServiceOuterClass.Fight> triggerFight() {
+        return fightService.fight(Supes.Empty.newBuilder().build());
 
-    public static class Fight {
-        public final Fighter hero;
-        public final Fighter villain;
-        public final String winner;
-
-        public Fight(FightServiceOuterClass.Fight fight) {
-            this.hero = new Fighter(fight.getHero().getName(), fight.getHero().getImage());
-            this.villain = new Fighter(fight.getVillain().getName(), fight.getVillain().getImage());
-            this.winner = fight.getWinner();
-        }
-    }
-
-    public static class Fighter {
-        public final String name;
-        public final String image;
-
-        public Fighter(String name, String image) {
-            this.name = name;
-            this.image = image;
-        }
     }
 }

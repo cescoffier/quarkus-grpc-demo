@@ -12,4 +12,4 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./infrastructure/mongo-supes-init.js:/docker-entrypoint-initdb.d/mongo-supes-init.js:ro
+      - ./infrastructure/mongo-supes-init.js:/docker-entrypoint-initdb.d/mongo-supes-init.js:z
