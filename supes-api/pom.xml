@@ -66,7 +66,7 @@
                             <id>quarkus-grpc-protoc-plugin</id>
                             <groupId>io.quarkus</groupId>
                             <artifactId>quarkus-grpc-protoc-plugin</artifactId>
-                            <version>${quarkus-grpc.version}</version>
+                            <version>${quarkus.version}</version>
                             <mainClass>io.quarkus.grpc.protoc.plugin.MutinyGrpcGenerator</mainClass>
                         </protocPlugin>
                     </protocPlugins>

@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <quarkus.version>1.4.1.Final</quarkus.version>
-        <quarkus-plugin.version>1.4.1.Final</quarkus-plugin.version>
+        <quarkus.version>999-SNAPSHOT</quarkus.version>
+        <quarkus-plugin.version>999-SNAPSHOT</quarkus-plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -21,7 +21,6 @@
 
         <surefire-plugin.version>2.22.2</surefire-plugin.version>
 
-        <quarkus-grpc.version>999-SNAPSHOT</quarkus-grpc.version>
         <grpc.version>1.25.0</grpc.version>
         <protoc.version>3.5.1</protoc.version>
     </properties>
@@ -34,23 +33,6 @@
                 <version>${quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-api</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-stub</artifactId>
-                <version>${grpc.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-grpc</artifactId>
-                <version>${quarkus-grpc.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
