@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <quarkus.version>999-SNAPSHOT</quarkus.version>
-        <quarkus-plugin.version>999-SNAPSHOT</quarkus-plugin.version>
+        <quarkus.version>1.5.0.Final</quarkus.version>
+        <quarkus-plugin.version>1.5.0.Final</quarkus-plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
